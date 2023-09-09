@@ -1,45 +1,51 @@
+/* Estilos generales */
 body {
-  background-color: #f2f2f2;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    height: 100vh;
+    margin: 0;
 }
 
-.container {
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* Estilos para el formulario */
+form {
+    background-color: #ffffff;
+    padding: 50px 70px 50px 50px; /* top right bottom left */ /* Aumentamos el padding */
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Aumentamos el ancho del formulario */
+    text-align: center;
 }
 
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+form label {
+    display: block;
+    margin-bottom: 20px; /* Aumentamos el margen inferior */
+    font-weight: bold;
 }
 
-.login-form input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Aumentamos el padding para que los inputs sean más altos */
+    margin-bottom: 25px; /* Aumentamos el margen inferior */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; /* Aumentamos el tamaño de la fuente */
 }
 
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+form input[type="submit"] {
+    display: block; /* Asegurándose de que el botón ocupe todo el ancho */
+    margin: 25px auto; /* Centrado horizontalmente y margen arriba y abajo de 25px */
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 80%; /* puedes ajustar este valor si quieres que el botón sea más estrecho */
 }
 
-.login-form button:hover {
-  background-color: #45a049;
-}
+
